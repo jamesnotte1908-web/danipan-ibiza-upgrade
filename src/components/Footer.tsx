@@ -4,7 +4,6 @@ export const Footer = () => (
       <div className="grid md:grid-cols-3 gap-8 mb-8">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full gradient-gold text-primary font-serif text-xl font-bold">D</span>
             <span className="font-serif text-xl font-semibold">Danipan Ibiza</span>
           </div>
           <p className="text-primary-foreground/70 text-sm">

@@ -7,11 +7,11 @@ import restaurante from "@/assets/menu-restaurante.jpg";
 import bebidas from "@/assets/menu-bebidas.jpg";
 
 type Item = { name: string; desc: string; price?: string; popular?: boolean };
-type Category = { id: string; emoji: string; title: string; image: string; items: Item[] };
+type Category = { id: string; title: string; image: string; items: Item[] };
 
 const categories: Category[] = [
   {
-    id: "panaderia", emoji: "🥐", title: "Panadería", image: panaderia,
+    id: "panaderia", title: "Panadería", image: panaderia,
     items: [
       { name: "Pan fresco diario", desc: "Horneado cada mañana, corteza dorada y miga suave.", popular: true },
       { name: "Pan tradicional colombiano", desc: "Pan de bono, pandebono y pan de queso." },
@@ -19,7 +19,7 @@ const categories: Category[] = [
     ],
   },
   {
-    id: "pasteleria", emoji: "🍰", title: "Pastelería", image: pasteleria,
+    id: "pasteleria", title: "Pastelería", image: pasteleria,
     items: [
       { name: "Tartas artesanales", desc: "Tres leches, chocolate, frutas de temporada.", popular: true },
       { name: "Dulces colombianos", desc: "Arequipe, obleas, brevas con arequipe." },
@@ -27,7 +27,7 @@ const categories: Category[] = [
     ],
   },
   {
-    id: "restaurante", emoji: "🍽️", title: "Restaurante", image: restaurante,
+    id: "restaurante", title: "Restaurante", image: restaurante,
     items: [
       { name: "Bandeja paisa", desc: "El plato típico colombiano, completo y abundante.", popular: true },
       { name: "Arepas rellenas", desc: "Con queso, carne, pollo o huevo." },
@@ -35,7 +35,7 @@ const categories: Category[] = [
     ],
   },
   {
-    id: "bebidas", emoji: "☕", title: "Bebidas", image: bebidas,
+    id: "bebidas", title: "Bebidas", image: bebidas,
     items: [
       { name: "Café colombiano", desc: "100% origen, intenso y aromático.", popular: true },
       { name: "Jugos naturales", desc: "Lulo, maracuyá, mora, mango." },
@@ -69,9 +69,6 @@ export const Menu = () => (
                 loading="lazy"
                 className="w-full h-[400px] sm:h-[500px] object-cover transition-smooth group-hover:scale-105"
               />
-              <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm rounded-full px-4 py-2 text-2xl shadow-soft">
-                {cat.emoji}
-              </div>
             </div>
 
             <div>
