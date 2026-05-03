@@ -33,7 +33,6 @@ export const Navbar = () => {
     >
       <nav className="container flex items-center justify-between">
         <a href="#inicio" className="flex items-center gap-2 group">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full gradient-gold text-primary font-serif text-xl font-bold shadow-soft">D</span>
           <span className={cn("font-serif text-lg sm:text-xl font-semibold leading-tight", scrolled ? "text-foreground" : "text-white drop-shadow-md")}>
             Danipan <span className="text-gold">Ibiza</span>
           </span>

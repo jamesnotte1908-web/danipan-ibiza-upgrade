@@ -1,13 +1,13 @@
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const WHATSAPP_NUMBER = "34600000000";
-const PHONE = "+34 600 000 000";
+const WHATSAPP_NUMBER = "34618369171";
+export const PHONE_DISPLAY = "+34 618 36 91 71";
 
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-  "Hola Danipan, me gustaría hacer un pedido 🥐"
+  "Hola Danipan, me gustaría hacer un pedido"
 )}`;
-export const PHONE_LINK = `tel:${PHONE.replace(/\s/g, "")}`;
+export const PHONE_LINK = "tel:+34618369171";
 
 export const FloatingWhatsApp = () => (
   <a
