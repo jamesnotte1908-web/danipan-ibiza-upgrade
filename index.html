@@ -1,24 +1,33 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Panadería Colombiana Danipan Ibiza · Pan Fresco y Comida Colombiana</title>
+    <meta name="description" content="Panadería y restaurante colombiano en Ibiza. Pan fresco hecho cada día, pastelería artesanal, platos típicos colombianos y café. Abierto todos los días 8:30–22:30." />
+    <meta name="author" content="Danipan Ibiza" />
+    <link rel="canonical" href="https://panaderiadanipan.com" />
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="Panadería Colombiana Danipan Ibiza" />
+    <meta property="og:description" content="Tradición, sabor y productos frescos hechos cada día en Ibiza." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "Panadería Colombiana Danipan Ibiza",
+      "image": "https://lovable.dev/opengraph-image-p98pqg.png",
+      "servesCuisine": ["Colombiana", "Panadería", "Pastelería"],
+      "priceRange": "€€",
+      "address": {"@type": "PostalAddress", "addressLocality": "Ibiza", "addressCountry": "ES"},
+      "openingHours": "Mo-Su 08:30-22:30"
+    }
+    </script>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
