@@ -69,9 +69,6 @@ export const Menu = () => (
                 loading="lazy"
                 className="w-full h-[400px] sm:h-[500px] object-cover transition-smooth group-hover:scale-105"
               />
-              <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm rounded-full px-4 py-2 text-2xl shadow-soft">
-                {cat.emoji}
-              </div>
             </div>
 
             <div>
