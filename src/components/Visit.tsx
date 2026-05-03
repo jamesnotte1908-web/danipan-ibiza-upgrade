@@ -42,7 +42,7 @@ export const Visit = () => (
             <div>
               <h3 className="font-serif text-lg font-semibold mb-1">Teléfono</h3>
               <a href={PHONE_LINK} className="text-muted-foreground hover:text-gold transition-smooth">
-                +34 600 000 000
+                +34 618 36 91 71
               </a>
             </div>
           </div>
